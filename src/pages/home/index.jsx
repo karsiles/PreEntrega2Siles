@@ -1,4 +1,4 @@
-import Menu from "../../components/Navbar/NavBar";
+import './components/Navbar/Menu';
 
 
 const Home = () =>{
