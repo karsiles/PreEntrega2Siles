@@ -10,9 +10,9 @@ function Menu() {
         <Container>
           <Navbar.Brand href="#home">Madison store</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.a href="#home">Home</Nav.a>
-            <Nav.a href="#catalogo">Catalogo</Nav.a>
-            <Nav.a href="#contacto">Contacto</Nav.a>
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#catalogo">Catalogo</Nav.Link>
+            <Nav.Link href="#contacto">Contacto</Nav.Link>
 
           </Nav>
         </Container>

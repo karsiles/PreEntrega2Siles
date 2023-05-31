@@ -1,5 +1,3 @@
-import './components/Navbar/Menu';
-
 
 const Home = () =>{
     return(

@@ -1,4 +1,3 @@
-import './components/Navbar/Menu';
 
 const Contacto = () =>{
     return
