@@ -1,8 +1,9 @@
 
 const Home = () =>{
+    
     return(
         <div>
-            <h1>Madison-Home</h1>
+            <h1>  Essen con Madi y Kar</h1>
             
 
         </div>
