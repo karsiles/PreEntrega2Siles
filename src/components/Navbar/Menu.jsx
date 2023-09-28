@@ -1,11 +1,11 @@
 import React,{useState} from 'react';
 import logo from '../imagen/logo.png'
-import CartWidget from '../CartWidget';
+import CartWidget from '../containers';
 import ItemListContainer from '../containers';
 import Container from 'react-bootstrap/Container';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
 
 
 const Menu = () => {

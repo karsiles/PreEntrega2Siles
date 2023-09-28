@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ItemListContainer = ({ greeting }) => {
   return (
@@ -10,3 +10,15 @@ const ItemListContainer = ({ greeting }) => {
 }
 
 export default ItemListContainer;
+export function CartWidget() {
+
+    return (
+        <div className="cart-widget">
+            <i className="fas fa-shoopping-cart"></i>
+            <span className="notification">5</span>
+            <img src='/imagenes/logo essen.png' alt="logo" width={75} />
+
+
+        </div>
+    );
+}
