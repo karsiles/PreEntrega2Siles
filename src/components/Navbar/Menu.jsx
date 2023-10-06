@@ -1,52 +1,33 @@
-import React,{useState} from 'react';
-import logo from '../imagen/logo.png'
-import CartWidget from '../containers';
-import ItemListContainer from '../containers';
-import Container from 'react-bootstrap/Container';
 
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
+import CartWidget from './CartWidget/index';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Importa el archivo CSS de Bootstrap
 
-
-const Menu = () => {
-  
-    const categorias =['Combos','LineaContemporanea','LineaNuit','Especiales','Bazar'];
-    const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);
-
-    const handleClick = (categorias) => {
-      console.log ('Categoria seleccionada: ${categoria}');
-      setCategoriaSeleccionada(categorias);
-
-    };
-    
-  
+const NavbarComponent = () => {
   return (
-    <>
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Essen en familia</Navbar.Brand>
-          <img src={logo} alt="Logo" className="logo"/>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#catalogo">Catalogo</Nav.Link>
-            <Nav.Link href="#contacto">Contacto</Nav.Link>
-
-          </Nav>
-          <CartWidget />
-        </Container>
-      </Navbar>
-      <Container>
-        <ul>
-          {categorias.map ((categoria, index) =>(
-            <li key ={index} onClick={()=> handleClick (categoria)}>
-              {categoria}
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container">
+        <a className="navbar-brand" href="/">Mi Tienda</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="/">Inicio</a>
             </li>
-          ))}
-        </ul>
-      </Container>
-      
-    </>
+            <li className="nav-item">
+              <a className="nav-link" href="/productos">Productos</a>
+            </li>
+            {/* Agrega el componente CartWidget en tu Navbar */}
+            <li className="nav-item">
+              <CartWidget />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
-}
+};
 
-export default Menu;
+export default NavbarComponent;

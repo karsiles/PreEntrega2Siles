@@ -1,8 +1,7 @@
 
-const Catalogos = () =>{
-    return
-        <>Esta es la pagina de catalogos </>;
-
-};
-
-export {Catalogos};
+const Catalogos = () => {
+    return <>Esta es la página de catálogos</>;
+  };
+  
+  export { Catalogos };
+  

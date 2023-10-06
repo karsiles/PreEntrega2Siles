@@ -1,8 +1,7 @@
 
-const Contacto = () =>{
-    return
-        <>Esta es la pagina de Contacto</>;
-
-};
-
-export {Contacto};
+const Contacto = () => {
+    return <>Esta es la página de Contacto</>;
+  };
+  
+  export { Contacto };
+  
