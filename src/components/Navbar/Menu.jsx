@@ -17,9 +17,13 @@ const NavbarComponent = () => {
               <a className="nav-link" href="/">Inicio</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/productos">Productos</a>
+              <a className="nav-link" href="/catalogos">Catalogo</a>
+              
             </li>
-            {/* Agrega el componente CartWidget en tu Navbar */}
+            <li className='nav-item'>
+              <a className="nac-link" href='/contacto'>Contacto</a>
+            </li>
+            {/* Agrega el componente CartWidget en el Navbar */}
             <li className="nav-item">
               <CartWidget />
             </li>

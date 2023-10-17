@@ -1,6 +1,10 @@
 
 const Contacto = () => {
-    return <>Esta es la página de Contacto</>;
+    return (
+      <div>
+        <h1>Contacto</h1>
+      </div>
+    );
   };
   
   export { Contacto };

@@ -1,6 +1,10 @@
 
 const Catalogos = () => {
-    return <>Esta es la página de catálogos</>;
+    return (
+      <div>
+        <h1>Catalogo</h1>
+      </div>
+    );
   };
   
   export { Catalogos };
